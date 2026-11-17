@@ -95,4 +95,4 @@ export const SKILLS = [
   { id: 'heal', name: 'Peach of Immortality', icon: 'icon_heal', price: 20, desc: '+20 max HP and a full heal. Can be bought again.', repeat: 1 },
 ];
 
-export const LEADERBOARD = { url: '', key: '' };
+export const LEADERBOARD = { url: 'https://hgwvsljuclrbrfrmangi.supabase.co', key: 'sb_publishable_Oy2Uw8prtntW908kAJUswg_ZetaALpE' };
