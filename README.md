@@ -1,5 +1,7 @@
 # MI HAO: Warrior Cat
 
+**Play now: [mihao.online](https://mihao.online)**
+
 A free browser beat'em-up for the **$MIHAO** community. Play as Mi Hao, the legendary ni hao cat,
 and fight across four lands of ancient China to face the Dragon Lord.
 
