@@ -22,11 +22,24 @@ export function track(name, rate = 1) {
   const a = music[name];
   a.playbackRate = rate;
   a.muted = !soundOn;
-  if (soundOn) a.play().catch(() => {});
+  if (soundOn && !document.hidden) a.play().catch(() => {});
 }
 
 export const pauseMusic = () => current && music[current].pause();
-export const resumeMusic = () => current && soundOn && music[current].play().catch(() => {});
+export const resumeMusic = () => current && soundOn && !document.hidden && music[current].play().catch(() => {});
+
+export function muteWhenHidden(mayResume) {
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      Object.values(music).forEach(a => a.pause());
+      if (ac) ac.suspend().catch(() => {});
+      return;
+    }
+    if (ac) ac.resume().catch(() => {});
+    if (mayResume()) resumeMusic();
+  });
+  addEventListener('pagehide', () => Object.values(music).forEach(a => a.pause()));
+}
 
 export function audioInit(onFirst) {
   if (ac) return;

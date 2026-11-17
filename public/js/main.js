@@ -1,7 +1,7 @@
 import { W, ZONES, DEBUG } from './config.js';
 import { loadManifest, loadList, charAtlases, imagePath } from './assets.js';
 import { S, P, updAnim } from './state.js';
-import { audioInit, track } from './audio.js';
+import { audioInit, track, muteWhenHidden } from './audio.js';
 import { setupKeyboard, setupTouch, pressed } from './input.js';
 import { updateHUD } from './hud.js';
 import { updatePlayer } from './player.js';
@@ -51,6 +51,7 @@ async function boot() {
   setupUI();
   setupKeyboard(() => audioInit(() => S.mode === 'title' && track('title')));
   setupTouch();
+  muteWhenHidden(() => S.mode !== 'pause');
   await loadManifest();
   await loadList([imagePath('poster'), imagePath('logo'), imagePath('portrait_mihao'), ...charAtlases('hero')], 'Sharpening the sword…');
   toTitle();
