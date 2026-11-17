@@ -1,0 +1,950 @@
+{
+ "anims": {
+  "dragon_idle": {
+   "src": "dragon_idle.webp",
+   "char": "dragon",
+   "n": 28,
+   "cols": 12,
+   "fps": 12,
+   "loop": true,
+   "fw": 332,
+   "fh": 162,
+   "ax": 169,
+   "ay": 157
+  },
+  "dragon_walk": {
+   "src": "dragon_walk.webp",
+   "char": "dragon",
+   "n": 21,
+   "cols": 12,
+   "fps": 12,
+   "loop": true,
+   "fw": 331,
+   "fh": 180,
+   "ax": 154,
+   "ay": 171
+  },
+  "dragon_attack": {
+   "src": "dragon_attack.webp",
+   "char": "dragon",
+   "n": 16,
+   "cols": 10,
+   "fps": 10,
+   "loop": false,
+   "fw": 379,
+   "fh": 174,
+   "ax": 206,
+   "ay": 169,
+   "hit": [
+    2,
+    8
+   ]
+  },
+  "dragon_sweep": {
+   "src": "dragon_sweep.webp",
+   "char": "dragon",
+   "n": 17,
+   "cols": 11,
+   "fps": 10,
+   "loop": false,
+   "fw": 363,
+   "fh": 179,
+   "ax": 215,
+   "ay": 174,
+   "hit": [
+    2,
+    10
+   ]
+  },
+  "dragon_roar": {
+   "src": "dragon_roar.webp",
+   "char": "dragon",
+   "n": 15,
+   "cols": 11,
+   "fps": 8,
+   "loop": false,
+   "fw": 343,
+   "fh": 213,
+   "ax": 167,
+   "ay": 207
+  },
+  "dragon_hurt": {
+   "src": "dragon_hurt.webp",
+   "char": "dragon",
+   "n": 18,
+   "cols": 12,
+   "fps": 12,
+   "loop": false,
+   "fw": 325,
+   "fh": 210,
+   "ax": 179,
+   "ay": 203
+  },
+  "dragon_death": {
+   "src": "dragon_death.webp",
+   "char": "dragon",
+   "n": 18,
+   "cols": 11,
+   "fps": 8,
+   "loop": false,
+   "fw": 362,
+   "fh": 186,
+   "ax": 174,
+   "ay": 157
+  },
+  "fox_idle": {
+   "src": "fox_idle.webp",
+   "char": "fox",
+   "n": 42,
+   "cols": 22,
+   "fps": 12,
+   "loop": true,
+   "fw": 179,
+   "fh": 124,
+   "ax": 100,
+   "ay": 120
+  },
+  "fox_walk": {
+   "src": "fox_walk.webp",
+   "char": "fox",
+   "n": 26,
+   "cols": 24,
+   "fps": 12,
+   "loop": true,
+   "fw": 164,
+   "fh": 124,
+   "ax": 79,
+   "ay": 118
+  },
+  "fox_attack": {
+   "src": "fox_attack.webp",
+   "char": "fox",
+   "n": 20,
+   "cols": 16,
+   "fps": 10,
+   "loop": false,
+   "fw": 245,
+   "fh": 140,
+   "ax": 167,
+   "ay": 137,
+   "shoot": 9
+  },
+  "fox_hurt": {
+   "src": "fox_hurt.webp",
+   "char": "fox",
+   "n": 14,
+   "cols": 14,
+   "fps": 12,
+   "loop": false,
+   "fw": 260,
+   "fh": 163,
+   "ax": 176,
+   "ay": 159
+  },
+  "fox_death": {
+   "src": "fox_death.webp",
+   "char": "fox",
+   "n": 18,
+   "cols": 13,
+   "fps": 10,
+   "loop": false,
+   "fw": 300,
+   "fh": 158,
+   "ax": 176,
+   "ay": 141
+  },
+  "hero_idle": {
+   "src": "hero_idle.webp",
+   "char": "hero",
+   "n": 57,
+   "cols": 18,
+   "fps": 24,
+   "loop": true,
+   "fw": 223,
+   "fh": 139,
+   "ax": 86,
+   "ay": 135
+  },
+  "hero_walk": {
+   "src": "hero_walk.webp",
+   "char": "hero",
+   "n": 30,
+   "cols": 17,
+   "fps": 24,
+   "loop": true,
+   "fw": 233,
+   "fh": 143,
+   "ax": 86,
+   "ay": 137
+  },
+  "hero_slash": {
+   "src": "hero_slash.webp",
+   "char": "hero",
+   "n": 18,
+   "cols": 15,
+   "fps": 24,
+   "loop": false,
+   "fw": 261,
+   "fh": 164,
+   "ax": 93,
+   "ay": 160,
+   "hit": [
+    5,
+    11
+   ]
+  },
+  "hero_thrust": {
+   "src": "hero_thrust.webp",
+   "char": "hero",
+   "n": 17,
+   "cols": 17,
+   "fps": 24,
+   "loop": false,
+   "fw": 219,
+   "fh": 139,
+   "ax": 87,
+   "ay": 134,
+   "hit": [
+    7,
+    13
+   ]
+  },
+  "hero_recover": {
+   "src": "hero_recover.webp",
+   "char": "hero",
+   "n": 11,
+   "cols": 11,
+   "fps": 24,
+   "loop": false,
+   "fw": 214,
+   "fh": 139,
+   "ax": 81,
+   "ay": 134
+  },
+  "hero_run": {
+   "src": "hero_run.webp",
+   "char": "hero",
+   "n": 32,
+   "cols": 20,
+   "fps": 34,
+   "loop": true,
+   "fw": 204,
+   "fh": 123,
+   "ax": 83,
+   "ay": 119
+  },
+  "hero_jump_up": {
+   "src": "hero_jump_up.webp",
+   "char": "hero",
+   "n": 9,
+   "cols": 9,
+   "fps": 24,
+   "loop": false,
+   "fw": 225,
+   "fh": 163,
+   "ax": 90,
+   "ay": 159
+  },
+  "hero_jump_air": {
+   "src": "hero_jump_air.webp",
+   "char": "hero",
+   "n": 8,
+   "cols": 8,
+   "fps": 16,
+   "loop": false,
+   "fw": 161,
+   "fh": 141,
+   "ax": 51,
+   "ay": 133
+  },
+  "hero_jump_land": {
+   "src": "hero_jump_land.webp",
+   "char": "hero",
+   "n": 15,
+   "cols": 15,
+   "fps": 24,
+   "loop": false,
+   "fw": 231,
+   "fh": 143,
+   "ax": 87,
+   "ay": 138
+  },
+  "hero_roll": {
+   "src": "hero_roll.webp",
+   "char": "hero",
+   "n": 22,
+   "cols": 16,
+   "fps": 26,
+   "loop": false,
+   "fw": 242,
+   "fh": 181,
+   "ax": 80,
+   "ay": 173
+  },
+  "hero_hurt": {
+   "src": "hero_hurt.webp",
+   "char": "hero",
+   "n": 13,
+   "cols": 13,
+   "fps": 24,
+   "loop": false,
+   "fw": 250,
+   "fh": 140,
+   "ax": 114,
+   "ay": 136
+  },
+  "hero_ko": {
+   "src": "hero_ko.webp",
+   "char": "hero",
+   "n": 27,
+   "cols": 12,
+   "fps": 20,
+   "loop": false,
+   "fw": 324,
+   "fh": 204,
+   "ax": 103,
+   "ay": 183
+  },
+  "hero_combo3": {
+   "src": "hero_combo3.webp",
+   "char": "hero",
+   "n": 27,
+   "cols": 13,
+   "fps": 24,
+   "loop": false,
+   "fw": 309,
+   "fh": 151,
+   "ax": 131,
+   "ay": 146,
+   "hit": [
+    9,
+    15
+   ]
+  },
+  "hero_heavy": {
+   "src": "hero_heavy.webp",
+   "char": "hero",
+   "n": 33,
+   "cols": 14,
+   "fps": 24,
+   "loop": false,
+   "fw": 290,
+   "fh": 196,
+   "ax": 84,
+   "ay": 183,
+   "hit": [
+    14,
+    22
+   ]
+  },
+  "hero_launcher": {
+   "src": "hero_launcher.webp",
+   "char": "hero",
+   "n": 37,
+   "cols": 17,
+   "fps": 24,
+   "loop": false,
+   "fw": 233,
+   "fh": 190,
+   "ax": 96,
+   "ay": 183,
+   "hit": [
+    6,
+    18
+   ]
+  },
+  "hero_air": {
+   "src": "hero_air.webp",
+   "char": "hero",
+   "n": 36,
+   "cols": 16,
+   "fps": 24,
+   "loop": false,
+   "fw": 254,
+   "fh": 188,
+   "ax": 114,
+   "ay": 183,
+   "hit": [
+    10,
+    22
+   ]
+  },
+  "hero_mustache": {
+   "src": "hero_mustache.webp",
+   "char": "hero",
+   "n": 38,
+   "cols": 12,
+   "fps": 22,
+   "loop": false,
+   "fw": 341,
+   "fh": 139,
+   "ax": 119,
+   "ay": 135,
+   "hit": [
+    8,
+    26
+   ]
+  },
+  "hero_whirlwind": {
+   "src": "hero_whirlwind.webp",
+   "char": "hero",
+   "n": 38,
+   "cols": 12,
+   "fps": 24,
+   "loop": false,
+   "fw": 341,
+   "fh": 183,
+   "ax": 155,
+   "ay": 172,
+   "hit": [
+    6,
+    34
+   ]
+  },
+  "hero_victory": {
+   "src": "hero_victory.webp",
+   "char": "hero",
+   "n": 33,
+   "cols": 22,
+   "fps": 12,
+   "loop": false,
+   "fw": 185,
+   "fh": 145,
+   "ax": 102,
+   "ay": 141
+  },
+  "jiangshi_idle": {
+   "src": "jiangshi_idle.webp",
+   "char": "jiangshi",
+   "n": 34,
+   "cols": 33,
+   "fps": 12,
+   "loop": true,
+   "fw": 123,
+   "fh": 123,
+   "ax": 69,
+   "ay": 119
+  },
+  "jiangshi_walk": {
+   "src": "jiangshi_walk.webp",
+   "char": "jiangshi",
+   "n": 18,
+   "cols": 18,
+   "fps": 12,
+   "loop": true,
+   "fw": 133,
+   "fh": 142,
+   "ax": 71,
+   "ay": 138
+  },
+  "jiangshi_attack": {
+   "src": "jiangshi_attack.webp",
+   "char": "jiangshi",
+   "n": 16,
+   "cols": 16,
+   "fps": 10,
+   "loop": false,
+   "fw": 173,
+   "fh": 123,
+   "ax": 115,
+   "ay": 119,
+   "hit": [
+    5,
+    9
+   ]
+  },
+  "jiangshi_hurt": {
+   "src": "jiangshi_hurt.webp",
+   "char": "jiangshi",
+   "n": 16,
+   "cols": 16,
+   "fps": 12,
+   "loop": false,
+   "fw": 139,
+   "fh": 125,
+   "ax": 67,
+   "ay": 121
+  },
+  "jiangshi_death": {
+   "src": "jiangshi_death.webp",
+   "char": "jiangshi",
+   "n": 17,
+   "cols": 15,
+   "fps": 10,
+   "loop": false,
+   "fw": 263,
+   "fh": 162,
+   "ax": 101,
+   "ay": 147
+  },
+  "ox_idle": {
+   "src": "ox_idle.webp",
+   "char": "ox",
+   "n": 27,
+   "cols": 15,
+   "fps": 12,
+   "loop": true,
+   "fw": 260,
+   "fh": 141,
+   "ax": 138,
+   "ay": 137
+  },
+  "ox_walk": {
+   "src": "ox_walk.webp",
+   "char": "ox",
+   "n": 17,
+   "cols": 16,
+   "fps": 12,
+   "loop": true,
+   "fw": 246,
+   "fh": 163,
+   "ax": 135,
+   "ay": 148
+  },
+  "ox_attack": {
+   "src": "ox_attack.webp",
+   "char": "ox",
+   "n": 21,
+   "cols": 10,
+   "fps": 10,
+   "loop": false,
+   "fw": 379,
+   "fh": 179,
+   "ax": 202,
+   "ay": 153,
+   "hit": [
+    8,
+    13
+   ]
+  },
+  "ox_hurt": {
+   "src": "ox_hurt.webp",
+   "char": "ox",
+   "n": 16,
+   "cols": 14,
+   "fps": 12,
+   "loop": false,
+   "fw": 292,
+   "fh": 155,
+   "ax": 165,
+   "ay": 150
+  },
+  "ox_death": {
+   "src": "ox_death.webp",
+   "char": "ox",
+   "n": 16,
+   "cols": 12,
+   "fps": 8,
+   "loop": false,
+   "fw": 319,
+   "fh": 191,
+   "ax": 197,
+   "ay": 171
+  },
+  "rat_idle": {
+   "src": "rat_idle.webp",
+   "char": "rat",
+   "n": 38,
+   "cols": 18,
+   "fps": 12,
+   "loop": true,
+   "fw": 225,
+   "fh": 125,
+   "ax": 133,
+   "ay": 121
+  },
+  "rat_walk": {
+   "src": "rat_walk.webp",
+   "char": "rat",
+   "n": 21,
+   "cols": 16,
+   "fps": 12,
+   "loop": true,
+   "fw": 249,
+   "fh": 130,
+   "ax": 137,
+   "ay": 123
+  },
+  "rat_attack": {
+   "src": "rat_attack.webp",
+   "char": "rat",
+   "n": 18,
+   "cols": 15,
+   "fps": 12,
+   "loop": false,
+   "fw": 270,
+   "fh": 129,
+   "ax": 172,
+   "ay": 125,
+   "hit": [
+    4,
+    11
+   ]
+  },
+  "rat_hurt": {
+   "src": "rat_hurt.webp",
+   "char": "rat",
+   "n": 14,
+   "cols": 14,
+   "fps": 24,
+   "loop": false,
+   "fw": 221,
+   "fh": 136,
+   "ax": 134,
+   "ay": 133
+  },
+  "rat_death": {
+   "src": "rat_death.webp",
+   "char": "rat",
+   "n": 12,
+   "cols": 12,
+   "fps": 10,
+   "loop": false,
+   "fw": 239,
+   "fh": 168,
+   "ax": 139,
+   "ay": 159
+  },
+  "tiger_idle": {
+   "src": "tiger_idle.webp",
+   "char": "tiger",
+   "n": 38,
+   "cols": 14,
+   "fps": 12,
+   "loop": true,
+   "fw": 274,
+   "fh": 153,
+   "ax": 151,
+   "ay": 149
+  },
+  "tiger_walk": {
+   "src": "tiger_walk.webp",
+   "char": "tiger",
+   "n": 22,
+   "cols": 15,
+   "fps": 12,
+   "loop": true,
+   "fw": 258,
+   "fh": 202,
+   "ax": 132,
+   "ay": 183
+  },
+  "tiger_attack": {
+   "src": "tiger_attack.webp",
+   "char": "tiger",
+   "n": 23,
+   "cols": 11,
+   "fps": 12,
+   "loop": false,
+   "fw": 371,
+   "fh": 169,
+   "ax": 228,
+   "ay": 161,
+   "hit": [
+    6,
+    15
+   ]
+  },
+  "tiger_combo": {
+   "src": "tiger_combo.webp",
+   "char": "tiger",
+   "n": 20,
+   "cols": 11,
+   "fps": 11,
+   "loop": false,
+   "fw": 365,
+   "fh": 203,
+   "ax": 230,
+   "ay": 198,
+   "hit": [
+    2,
+    16
+   ]
+  },
+  "tiger_combo2": {
+   "src": "tiger_combo2.webp",
+   "char": "tiger",
+   "n": 20,
+   "cols": 10,
+   "fps": 11,
+   "loop": false,
+   "fw": 394,
+   "fh": 207,
+   "ax": 214,
+   "ay": 198,
+   "hit": [
+    6,
+    16
+   ]
+  },
+  "tiger_slam": {
+   "src": "tiger_slam.webp",
+   "char": "tiger",
+   "n": 19,
+   "cols": 9,
+   "fps": 11,
+   "loop": false,
+   "fw": 420,
+   "fh": 236,
+   "ax": 230,
+   "ay": 198,
+   "hit": [
+    11,
+    13
+   ]
+  },
+  "tiger_roar": {
+   "src": "tiger_roar.webp",
+   "char": "tiger",
+   "n": 16,
+   "cols": 14,
+   "fps": 8,
+   "loop": false,
+   "fw": 283,
+   "fh": 168,
+   "ax": 151,
+   "ay": 164
+  },
+  "tiger_hurt": {
+   "src": "tiger_hurt.webp",
+   "char": "tiger",
+   "n": 12,
+   "cols": 12,
+   "fps": 12,
+   "loop": false,
+   "fw": 274,
+   "fh": 203,
+   "ax": 151,
+   "ay": 198
+  },
+  "tiger_death": {
+   "src": "tiger_death.webp",
+   "char": "tiger",
+   "n": 16,
+   "cols": 13,
+   "fps": 8,
+   "loop": false,
+   "fw": 309,
+   "fh": 214,
+   "ax": 151,
+   "ay": 185
+  },
+  "toad_idle": {
+   "src": "toad_idle.webp",
+   "char": "toad",
+   "n": 45,
+   "cols": 17,
+   "fps": 12,
+   "loop": true,
+   "fw": 235,
+   "fh": 190,
+   "ax": 103,
+   "ay": 185
+  },
+  "toad_walk": {
+   "src": "toad_walk.webp",
+   "char": "toad",
+   "n": 18,
+   "cols": 17,
+   "fps": 12,
+   "loop": true,
+   "fw": 235,
+   "fh": 178,
+   "ax": 96,
+   "ay": 169
+  },
+  "toad_attack": {
+   "src": "toad_attack.webp",
+   "char": "toad",
+   "n": 16,
+   "cols": 12,
+   "fps": 10,
+   "loop": false,
+   "fw": 329,
+   "fh": 189,
+   "ax": 194,
+   "ay": 154,
+   "hit": [
+    3,
+    11
+   ]
+  },
+  "toad_swing": {
+   "src": "toad_swing.webp",
+   "char": "toad",
+   "n": 13,
+   "cols": 9,
+   "fps": 10,
+   "loop": false,
+   "fw": 420,
+   "fh": 202,
+   "ax": 194,
+   "ay": 198,
+   "hit": [
+    1,
+    7
+   ]
+  },
+  "toad_belly": {
+   "src": "toad_belly.webp",
+   "char": "toad",
+   "n": 15,
+   "cols": 12,
+   "fps": 10,
+   "loop": false,
+   "fw": 331,
+   "fh": 206,
+   "ax": 194,
+   "ay": 198,
+   "hit": [
+    7,
+    12
+   ]
+  },
+  "toad_hurt": {
+   "src": "toad_hurt.webp",
+   "char": "toad",
+   "n": 18,
+   "cols": 14,
+   "fps": 12,
+   "loop": false,
+   "fw": 283,
+   "fh": 195,
+   "ax": 117,
+   "ay": 190
+  },
+  "toad_death": {
+   "src": "toad_death.webp",
+   "char": "toad",
+   "n": 18,
+   "cols": 9,
+   "fps": 8,
+   "loop": false,
+   "fw": 420,
+   "fh": 213,
+   "ax": 194,
+   "ay": 175
+  },
+  "wolf_idle": {
+   "src": "wolf_idle.webp",
+   "char": "wolf",
+   "n": 24,
+   "cols": 14,
+   "fps": 12,
+   "loop": true,
+   "fw": 279,
+   "fh": 153,
+   "ax": 152,
+   "ay": 148
+  },
+  "wolf_walk": {
+   "src": "wolf_walk.webp",
+   "char": "wolf",
+   "n": 23,
+   "cols": 14,
+   "fps": 12,
+   "loop": true,
+   "fw": 285,
+   "fh": 189,
+   "ax": 154,
+   "ay": 167
+  },
+  "wolf_attack": {
+   "src": "wolf_attack.webp",
+   "char": "wolf",
+   "n": 16,
+   "cols": 11,
+   "fps": 10,
+   "loop": false,
+   "fw": 346,
+   "fh": 164,
+   "ax": 228,
+   "ay": 160,
+   "hit": [
+    2,
+    7
+   ]
+  },
+  "wolf_thrust": {
+   "src": "wolf_thrust.webp",
+   "char": "wolf",
+   "n": 22,
+   "cols": 12,
+   "fps": 11,
+   "loop": false,
+   "fw": 341,
+   "fh": 160,
+   "ax": 208,
+   "ay": 156,
+   "hit": [
+    2,
+    16
+   ]
+  },
+  "wolf_howl": {
+   "src": "wolf_howl.webp",
+   "char": "wolf",
+   "n": 17,
+   "cols": 14,
+   "fps": 8,
+   "loop": false,
+   "fw": 280,
+   "fh": 204,
+   "ax": 154,
+   "ay": 198
+  },
+  "wolf_hurt": {
+   "src": "wolf_hurt.webp",
+   "char": "wolf",
+   "n": 18,
+   "cols": 11,
+   "fps": 12,
+   "loop": false,
+   "fw": 344,
+   "fh": 203,
+   "ax": 227,
+   "ay": 198
+  },
+  "wolf_death": {
+   "src": "wolf_death.webp",
+   "char": "wolf",
+   "n": 18,
+   "cols": 12,
+   "fps": 8,
+   "loop": false,
+   "fw": 329,
+   "fh": 172,
+   "ax": 209,
+   "ay": 153
+  }
+ },
+ "chars": {
+  "dragon": {
+   "srcScale": 0.344
+  },
+  "fox": {
+   "srcScale": 0.264
+  },
+  "hero": {
+   "srcScale": 0.304
+  },
+  "jiangshi": {
+   "srcScale": 0.264
+  },
+  "ox": {
+   "srcScale": 0.296
+  },
+  "rat": {
+   "srcScale": 0.264
+  },
+  "tiger": {
+   "srcScale": 0.328
+  },
+  "toad": {
+   "srcScale": 0.328
+  },
+  "wolf": {
+   "srcScale": 0.328
+  }
+ }
+}
